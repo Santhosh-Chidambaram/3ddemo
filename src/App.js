@@ -29,6 +29,7 @@ function App() {
         <Suspense fallback={null}>
           <CharacterModel />
         </Suspense>
+        <OrbitControls />
       </Canvas>
       <Canvas
         camera={{ fov: 45 }}
@@ -40,6 +41,7 @@ function App() {
         <pointLight position={[10, 10, 10]} intensity={2} />
         <Suspense fallback={null}>
           <FemaleModel />
+          <OrbitControls />
         </Suspense>
       </Canvas>
       <Canvas
@@ -52,6 +54,7 @@ function App() {
         <pointLight position={[10, 10, 10]} intensity={2} />
         <Suspense fallback={null}>
           <OthersModel />
+          <OrbitControls />
         </Suspense>
       </Canvas>
     </div>
